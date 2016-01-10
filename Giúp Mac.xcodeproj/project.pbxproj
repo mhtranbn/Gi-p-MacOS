@@ -81,6 +81,8 @@
 		32AC944B1AC86D98008C5F7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AC944A1AC86D98008C5F7E /* QuartzCore.framework */; };
 		32AC944D1AC86DA5008C5F7E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AC944C1AC86DA5008C5F7E /* libz.dylib */; };
 		32D41C8D1AC3A986007F52C1 /* Verdana Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3238CE081A99A17D0008C726 /* Verdana Bold.ttf */; };
+		32D7FFE21C42B7F3003A8E2D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D7FFE01C42B7F3003A8E2D /* Default-568h@2x.png */; };
+		32D7FFE31C42B7F3003A8E2D /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D7FFE11C42B7F3003A8E2D /* Default-568h.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +165,8 @@
 		32AC94481AC86D91008C5F7E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		32AC944A1AC86D98008C5F7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		32AC944C1AC86DA5008C5F7E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		32D7FFE01C42B7F3003A8E2D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		32D7FFE11C42B7F3003A8E2D /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +189,8 @@
 		3205AD211A95B3F800FBF5DF = {
 			isa = PBXGroup;
 			children = (
+				32D7FFE01C42B7F3003A8E2D /* Default-568h@2x.png */,
+				32D7FFE11C42B7F3003A8E2D /* Default-568h.png */,
 				32AC944C1AC86DA5008C5F7E /* libz.dylib */,
 				32AC944A1AC86D98008C5F7E /* QuartzCore.framework */,
 				32AC94481AC86D91008C5F7E /* AdSupport.framework */,
@@ -391,6 +397,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D7FFE21C42B7F3003A8E2D /* Default-568h@2x.png in Resources */,
+				32D7FFE31C42B7F3003A8E2D /* Default-568h.png in Resources */,
 				327FD8D41AC6B26600BE675D /* Tìm tập tin thất lạc.jpg in Resources */,
 				325E5C581AC2AB6A00EB0694 /* ko nha dia.jpg in Resources */,
 				3235AAD71ACB9DA700F5CA8F /*  các phím tắt hữa dụng.png in Resources */,
