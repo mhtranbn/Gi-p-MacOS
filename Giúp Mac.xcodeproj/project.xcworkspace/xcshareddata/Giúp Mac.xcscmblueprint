@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B2BB2230C22D0C099B45BB3F52415D433616CE33",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CD49323F0B96EF37439E0330BA97E616948394A4" : 0,
+    "B2BB2230C22D0C099B45BB3F52415D433616CE33" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F859A897-1D0B-4097-84A7-9E6DC9246702",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CD49323F0B96EF37439E0330BA97E616948394A4" : "Giu%CC%81p%20MacOS",
+    "B2BB2230C22D0C099B45BB3F52415D433616CE33" : "gi-p-macos"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Giúp Mac",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Giúp Mac.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/bitbucket.org\/mhtran\/gi-p-macos.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B2BB2230C22D0C099B45BB3F52415D433616CE33"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mhtranbn\/Gi-p-MacOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CD49323F0B96EF37439E0330BA97E616948394A4"
+    }
+  ]
+}

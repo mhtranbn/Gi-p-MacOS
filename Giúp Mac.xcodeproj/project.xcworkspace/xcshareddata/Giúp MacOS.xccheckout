@@ -5,41 +5,29 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>F859A897-1D0B-4097-84A7-9E6DC9246702</string>
+	<string>D7C7E6A1-87C5-4701-BAF4-1CE9BD19A95A</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Giúp Mac</string>
+	<string>Giúp MacOS</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B2BB2230C22D0C099B45BB3F52415D433616CE33</key>
-		<string>https://bitbucket.org/mhtran/gi-p-macos.git</string>
 		<key>CD49323F0B96EF37439E0330BA97E616948394A4</key>
 		<string>https://github.com/mhtranbn/Gi-p-MacOS.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Giúp Mac.xcodeproj</string>
+	<string>Giúp MacOS.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B2BB2230C22D0C099B45BB3F52415D433616CE33</key>
-		<string>../..</string>
 		<key>CD49323F0B96EF37439E0330BA97E616948394A4</key>
-		<string>../../../Giu%CC%81p%20MacOS</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/mhtran/gi-p-macos.git</string>
+	<string>https://github.com/mhtranbn/Gi-p-MacOS.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B2BB2230C22D0C099B45BB3F52415D433616CE33</string>
+	<string>CD49323F0B96EF37439E0330BA97E616948394A4</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B2BB2230C22D0C099B45BB3F52415D433616CE33</string>
-			<key>IDESourceControlWCCName</key>
-			<string>gi-p-macos</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
