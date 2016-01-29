@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import GoogleMobileAds
 class AboutVC: UIViewController,UIScrollViewDelegate {
     var textView: UITextView!
     var autoscroolTimer: NSTimer?
@@ -33,6 +33,13 @@ class AboutVC: UIViewController,UIScrollViewDelegate {
         textView.selectable = true
         textView.font = UIFont(name: "Chalkboard", size: 14)
         self.view.addSubview(textView!)
+        let bannerView = GADBannerView(frame: CGRect(x: 0, y: self.view.frame.height - 55 - (self.navigationController?.navigationBar.frame.size.height)!, width: self.view.frame.width, height: 50))
+        bannerView.adUnitID = "ca-app-pub-6539656833486891/1142539760"
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        request.testDevices = ["58643351-9AF2-4C00-A7D8-CCFEF7B663E5"]
+        bannerView.loadRequest(request)
+        self.view.addSubview(bannerView)
 
 }
 

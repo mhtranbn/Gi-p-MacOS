@@ -8,6 +8,7 @@
 
 import UIKit
 import Foundation
+import GoogleMobileAds
 class MoreAppVC: UIViewController {
     var viewRect:CGRect!
     var viewHeight: CGFloat!
@@ -16,6 +17,7 @@ class MoreAppVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "Game của Hoàng"
         
@@ -27,7 +29,7 @@ class MoreAppVC: UIViewController {
         let centerP = CGPoint(x: self.view.bounds.size.width / 2, y: self.view.bounds.size.height / 2)
 // game snake trong view
         
-        var title = UILabel(frame: CGRect(x: centerP.x/3, y: 30, width: 190, height: 20))
+        let title = UILabel(frame: CGRect(x: centerP.x/3, y: 30, width: 190, height: 20))
         let game1 = UIButton(frame: CGRectMake(centerP.x - 30, centerP.y - 90, 60, 60))
         let image1 = UIImage(named: "App1.png") as UIImage!
         game1.setBackgroundImage(image1, forState: .Normal)
@@ -50,6 +52,13 @@ class MoreAppVC: UIViewController {
         label2.font = UIFont(name: "Chalkboard", size: 12)
         self.view.addSubview(label2)
         // Do any additional setup after loading the view.
+        let bannerView = GADBannerView(frame: CGRect(x: 0, y: self.view.frame.height - 55 - (self.navigationController?.navigationBar.frame.size.height)!, width: self.view.frame.width, height: 50))
+        bannerView.adUnitID = "ca-app-pub-6539656833486891/1142539760"
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        request.testDevices = ["58643351-9AF2-4C00-A7D8-CCFEF7B663E5"]
+        bannerView.loadRequest(request)
+        self.view.addSubview(bannerView)
         
     }
     

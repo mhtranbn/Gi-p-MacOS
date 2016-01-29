@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GoogleMobileAds
+import SystemConfiguration
 
 class View: UIViewController {
     override func viewDidLoad() {
@@ -20,12 +22,8 @@ class DetailScreen: UITableViewController {
     var t: Int = 0
     var tg: Int = 0
     var data: MenuData?
-//    var selectedItems: [String: Bool] = [:]
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         let back : UIBarButtonItem = UIBarButtonItem(title: "<- Quay lại", style: UIBarButtonItemStyle.Plain, target: self, action: "backview")
         if let font = UIFont(name: "Chalkboard", size: 16) {
             back.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
@@ -43,21 +41,7 @@ class DetailScreen: UITableViewController {
         }
 
         self.clearsSelectionOnViewWillAppear = false
-        
-        
-        
     }
-
-    // MARK: - Table view data source
-
-//    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-//        // #warning Potentially incomplete method implementation.
-//        // Return the number of sections.
-//        return 0
-//    }
-    
-
-       
 
     func backview() {
         navigationController?.popToRootViewControllerAnimated(true)
@@ -66,16 +50,10 @@ class DetailScreen: UITableViewController {
     func setData(data:MenuData) {
         self.data = data
     }
-    
-    
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete method implementation.
-        // Return the number of rows in the section.
         return data!.detailData.count
     }
-
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: DetailVC!
         if let dequecell = tableView.dequeueReusableCellWithIdentifier("#", forIndexPath: indexPath) as? DetailVC {
@@ -86,89 +64,20 @@ class DetailScreen: UITableViewController {
         let detailStr = data!.detailData[indexPath.row] as DetailStr
         cell.title.text = detailStr.title
         cell.imageDe.image = UIImage(named: detailStr.imagePath)
-//        cell.accessoryType = UITableViewCellAccessoryType.DetailButton
 
         return cell
     }
+    
+    
     
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return 100
     }
     
-//    override func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
-//        
-//    }
-    
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        
-//        tg += 1
-//        NSLog("tgtgtg=\(tg)")
-//        if (tg % 3 == 0) {
-//
-//            startAppAdAutoLoad!.showAd()
-////            startAppAdLoadShow!.loadAd(STAAdType_Automatic, withDelegate: self)
-//        }
         self.navigationController?.pushViewController(Detail(data:data!.detailData[indexPath.row]), animated: true)
         
     }
-    
-//    override func viewDidAppear(animated: Bool) {
-//        super.viewDidAppear(animated)
-//        startAppAdAutoLoad!.loadAd()
-//        
-//        /*
-//        load the StartApp auto position banner, banner size will be assigned automatically by  StartApp
-//        NOTE: replace the ApplicationID and the PublisherID with your own IDs
-//        */
-//        if (startAppBannerAuto == nil) {
-//            startAppBannerAuto = STABannerView(size: STA_AutoAdSize, autoOrigin: STAAdOrigin_Bottom, withView: self.view, withDelegate: nil);
-//            self.view.addSubview(startAppBannerAuto!)
-//
-//            
-//        }
-    
-        /*
-        load the StartApp fixed position banner - in (0, 200)
-        NOTE: replace the ApplicationID and the PublisherID with your own IDs
-        */
-//        if (startAppBannerFixed == nil) {
-//            if (UIDevice.currentDevice().userInterfaceIdiom == .Pad) {
-//                startAppBannerFixed = STABannerView(size: STA_PortraitAdSize_768x90, origin: CGPointMake(0,300), withView: self.view, withDelegate: nil)
-//            } else {
-//                startAppBannerFixed = STABannerView(size: STA_PortraitAdSize_320x50, origin: CGPointMake(0,200), withView: self.view, withDelegate: nil)
-//            }
-//            startAppBannerFixed?.superview
-//            
-//            self.view.addSubview(startAppBannerFixed!)        }
-//    }
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return NO if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
     
     // Override to support conditional rearranging of the table view.
     override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
@@ -176,15 +85,20 @@ class DetailScreen: UITableViewController {
         return true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRectMake(0,0,tableView.frame.size.width, 50))
+        return footerView
     }
-    */
+
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if Reachability.isConnectedToNetwork() == false {
+            return 0
+        }
+        
+        else {
+          return 50
+        }
+    }
 
 }

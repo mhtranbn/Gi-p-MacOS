@@ -132,15 +132,21 @@ class DetailScreen2: UITableViewController {
         return true
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    override func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView(frame: CGRectMake(0,0,tableView.frame.size.width, 50))
+        return footerView
     }
-    */
+    
+    
+    override func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        if Reachability.isConnectedToNetwork() == false {
+            return 0
+        }
+            
+        else {
+            return 50
+        }
+    }
+
 
 }

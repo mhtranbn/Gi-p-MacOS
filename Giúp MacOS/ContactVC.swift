@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 import Social
-
+import GoogleMobileAds
 class ContactVC: UIViewController,UITextFieldDelegate,MFMailComposeViewControllerDelegate {
 
     var email:UILabel?
@@ -20,13 +20,13 @@ class ContactVC: UIViewController,UITextFieldDelegate,MFMailComposeViewControlle
     var body:UITextView?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         self.view.backgroundColor = UIColor.whiteColor()
         self.title = "Góp ý vs Hoàng"
         
         self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Chalkboard", size: 20)!, NSForegroundColorAttributeName: UIColor.blackColor()]
 
-        var centerPoint = CGPoint(x: self.view.bounds.size.width / 2, y: self.view.bounds.size.height / 2)
+        let centerPoint = CGPoint(x: self.view.bounds.size.width / 2, y: self.view.bounds.size.height / 2)
         
         // add  email and sdt chuyen muc may tinh mac os cua tinh te
         
@@ -83,7 +83,14 @@ class ContactVC: UIViewController,UITextFieldDelegate,MFMailComposeViewControlle
         twiter?.addGestureRecognizer(sharet)
         self.view.addSubview(twiter!)
 
-        
+        //add qc
+        let bannerView = GADBannerView(frame: CGRect(x: 0, y: self.view.frame.height - 55 - (self.navigationController?.navigationBar.frame.size.height)!, width: self.view.frame.width, height: 50))
+        bannerView.adUnitID = "ca-app-pub-6539656833486891/1142539760"
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        request.testDevices = ["58643351-9AF2-4C00-A7D8-CCFEF7B663E5"]
+        bannerView.loadRequest(request)
+        self.view.addSubview(bannerView)
         
         // Do any additional setup after loading the view.
     }

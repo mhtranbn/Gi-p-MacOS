@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import GoogleMobileAds
 
 class MenuVC: UIViewController {
     var menuData = Array<MenuData>()
@@ -15,11 +16,16 @@ class MenuVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //add quang cao
+        let bannerView = GADBannerView(frame: CGRect(x: 0, y: self.view.frame.height - 75 - (self.navigationController?.navigationBar.frame.size.height)!, width: self.view.frame.width, height: 50))
+        bannerView.adUnitID = "ca-app-pub-6539656833486891/1142539760"
+        bannerView.rootViewController = self
+        let request = GADRequest()
+        request.testDevices = ["58643351-9AF2-4C00-A7D8-CCFEF7B663E5"]
+        bannerView.loadRequest(request)
+        self.navigationController?.navigationBar.addSubview(bannerView)
+        //
         self.view.backgroundColor = UIColor.whiteColor()
-//        var background = UIImageView(frame: CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: self.view.bounds.size.height))
-//        background.image = UIImage(named: "back.jpg")
-//        self.view.addSubview(background)
         self.title = "Giúp Mac"
 
         self.navigationController?.navigationBar.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Chalkboard", size: 22)!, NSForegroundColorAttributeName: UIColor.blackColor()]
