@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3205AD301A95B3F800FBF5DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205AD2F1A95B3F800FBF5DF /* AppDelegate.swift */; };
-		3205AD321A95B3F800FBF5DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205AD311A95B3F800FBF5DF /* ViewController.swift */; };
 		3205AD351A95B3F800FBF5DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3205AD331A95B3F800FBF5DF /* Main.storyboard */; };
 		3205AD371A95B3F800FBF5DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3205AD361A95B3F800FBF5DF /* Images.xcassets */; };
 		3205AD521A95B74300FBF5DF /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3205AD511A95B74300FBF5DF /* MenuVC.swift */; };
@@ -31,7 +30,7 @@
 		322717A11A9AA377006576B6 /* Mission control.png in Resources */ = {isa = PBXBuildFile; fileRef = 322717A01A9AA377006576B6 /* Mission control.png */; };
 		322717A31A9ABAC7006576B6 /* track.png in Resources */ = {isa = PBXBuildFile; fileRef = 322717A21A9ABAC7006576B6 /* track.png */; };
 		3235AAD51ACB974800F5CA8F /* trackpad mac error.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3235AAD41ACB974800F5CA8F /* trackpad mac error.jpg */; };
-		3235AAD71ACB9DA700F5CA8F /*  các phím tắt hữa dụng.png in Resources */ = {isa = PBXBuildFile; fileRef = 3235AAD61ACB9DA700F5CA8F /*  các phím tắt hữa dụng.png */; };
+		3235AAD71ACB9DA700F5CA8F /* các phím tắt hữa dụng.png in Resources */ = {isa = PBXBuildFile; fileRef = 3235AAD61ACB9DA700F5CA8F /* các phím tắt hữa dụng.png */; };
 		3235AAD91ACBB9DB00F5CA8F /* GiupMacOs.png in Resources */ = {isa = PBXBuildFile; fileRef = 3235AAD81ACBB9DB00F5CA8F /* GiupMacOs.png */; };
 		3238CE051A998FE60008C726 /* os-x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3238CE041A998FE60008C726 /* os-x.jpg */; };
 		324ED0721C59277500818260 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324ED0711C59277500818260 /* GoogleMobileAds.framework */; };
@@ -40,8 +39,8 @@
 		324ED0781C5928A600818260 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324ED0771C5928A600818260 /* EventKitUI.framework */; };
 		324ED07A1C5928BD00818260 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324ED0791C5928BD00818260 /* EventKit.framework */; };
 		324ED07C1C5928D100818260 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 324ED07B1C5928D100818260 /* MessageUI.framework */; };
+		325BE3D51C9BA08700AAFF83 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325BE3D41C9BA08700AAFF83 /* CoreData.swift */; };
 		325E5C4C1AC2559F00EB0694 /* he dieu hanh mac os x.png in Resources */ = {isa = PBXBuildFile; fileRef = 325E5C4B1AC2559F00EB0694 /* he dieu hanh mac os x.png */; };
-		325E5C4E1AC25AA500EB0694 /* DetailScreen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 325E5C4D1AC25AA500EB0694 /* DetailScreen2.swift */; };
 		325E5C501AC26C8F00EB0694 /* che do bao hanh.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 325E5C4F1AC26C8F00EB0694 /* che do bao hanh.jpg */; };
 		325E5C521AC2A4A400EB0694 /* share data mac win.png in Resources */ = {isa = PBXBuildFile; fileRef = 325E5C511AC2A4A400EB0694 /* share data mac win.png */; };
 		325E5C541AC2A6B100EB0694 /* tui chong soc.png in Resources */ = {isa = PBXBuildFile; fileRef = 325E5C531AC2A6B100EB0694 /* tui chong soc.png */; };
@@ -50,10 +49,15 @@
 		325E5C5A1AC2AE1600EB0694 /* so lan xac.png in Resources */ = {isa = PBXBuildFile; fileRef = 325E5C591AC2AE1600EB0694 /* so lan xac.png */; };
 		3273D5101C426BDD00725A14 /* DetailVC~ipad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3273D50E1C426BDD00725A14 /* DetailVC~ipad.swift */; };
 		3273D5111C426BDD00725A14 /* DetailVC~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3273D50F1C426BDD00725A14 /* DetailVC~ipad.xib */; };
-		3276AB911AC841FF00C0F09A /* icon copy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3276AB901AC841FF00C0F09A /* icon copy.jpg */; };
 		3276AB931AC842CD00C0F09A /* App1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3276AB921AC842CD00C0F09A /* App1.png */; };
 		3276AB951AC851F700C0F09A /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3276AB941AC851F700C0F09A /* Detail.swift */; };
 		327CB7CD1C5BCEF000AC0CAF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 327CB7CC1C5BCEF000AC0CAF /* CoreData.framework */; };
+		327CB7D51C5BD73300AC0CAF /* Giúp Mac.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 327CB7D31C5BD73300AC0CAF /* Giúp Mac.xcdatamodeld */; };
+		327CB81F1C5C4FB900AC0CAF /* giupmacdata.db in Resources */ = {isa = PBXBuildFile; fileRef = 327CB81A1C5C4FB900AC0CAF /* giupmacdata.db */; };
+		327CB8231C5C531F00AC0CAF /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327CB8221C5C531F00AC0CAF /* CSV.swift */; };
+		327CB8251C5C5E8800AC0CAF /* giupmac2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 327CB8241C5C5E8800AC0CAF /* giupmac2.csv */; };
+		327CB8281C5C601F00AC0CAF /* GiupMac+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327CB8261C5C601F00AC0CAF /* GiupMac+CoreDataProperties.swift */; };
+		327CB8291C5C601F00AC0CAF /* GiupMac.swift in Sources */ = {isa = PBXBuildFile; fileRef = 327CB8271C5C601F00AC0CAF /* GiupMac.swift */; };
 		327F315D1AC2C96300D7F8CF /* vesinhmacbook.png in Resources */ = {isa = PBXBuildFile; fileRef = 327F315C1AC2C96300D7F8CF /* vesinhmacbook.png */; };
 		327F315F1AC2CDEB00D7F8CF /* resetnpram.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327F315E1AC2CDEB00D7F8CF /* resetnpram.jpg */; };
 		327FD8C41AC6A68100BE675D /* Tăng tốc tối đa máy Mac.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327FD8C31AC6A68100BE675D /* Tăng tốc tối đa máy Mac.jpg */; };
@@ -69,7 +73,6 @@
 		327FD8D81AC6B3C700BE675D /* Khôi phục kết nối Wifi bị gián đoạn .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327FD8D71AC6B3C700BE675D /* Khôi phục kết nối Wifi bị gián đoạn .jpg */; };
 		327FD8DA1AC6B42B00BE675D /* Xem các tập tin WMV .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327FD8D91AC6B42B00BE675D /* Xem các tập tin WMV .jpg */; };
 		327FD8DE1AC6B8E400BE675D /* Các phím tắt hữu ích khi khởi động Mac OS .jpg in Resources */ = {isa = PBXBuildFile; fileRef = 327FD8DD1AC6B8E400BE675D /* Các phím tắt hữu ích khi khởi động Mac OS .jpg */; };
-		3286ACE51A98887C00D5DFE4 /* MenuData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3286ACE41A98887C00D5DFE4 /* MenuData.swift */; };
 		3286ACE71A9888D000D5DFE4 /* DetailStr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3286ACE61A9888D000D5DFE4 /* DetailStr.swift */; };
 		328B405C1C59FB1C00463D46 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 328B405B1C59FB1C00463D46 /* Reachability.swift */; };
 		329E6A931A9F902A000D64FE /* Language & Text.png in Resources */ = {isa = PBXBuildFile; fileRef = 329E6A921A9F902A000D64FE /* Language & Text.png */; };
@@ -87,6 +90,9 @@
 		32AC94451AC86D81008C5F7E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AC94441AC86D81008C5F7E /* CoreGraphics.framework */; };
 		32AC94471AC86D8B008C5F7E /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AC94461AC86D8B008C5F7E /* StoreKit.framework */; };
 		32AC944B1AC86D98008C5F7E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32AC944A1AC86D98008C5F7E /* QuartzCore.framework */; };
+		32C61F7A1CA27018004E7F1D /* icon_copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 32C61F791CA27018004E7F1D /* icon_copy.png */; };
+		32C61F7C1CA29718004E7F1D /* ShowGoogleAdmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61F7B1CA29718004E7F1D /* ShowGoogleAdmob.swift */; };
+		32C61F7E1CA299A3004E7F1D /* aDmob.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61F7D1CA299A3004E7F1D /* aDmob.swift */; };
 		32D41C8D1AC3A986007F52C1 /* Verdana Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3238CE081A99A17D0008C726 /* Verdana Bold.ttf */; };
 		32D7FFE21C42B7F3003A8E2D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D7FFE01C42B7F3003A8E2D /* Default-568h@2x.png */; };
 		32D7FFE31C42B7F3003A8E2D /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 32D7FFE11C42B7F3003A8E2D /* Default-568h.png */; };
@@ -95,25 +101,24 @@
 /* Begin PBXFileReference section */
 		3205AD2A1A95B3F800FBF5DF /* Giúp Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Giúp Mac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3205AD2E1A95B3F800FBF5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3205AD2F1A95B3F800FBF5DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		3205AD311A95B3F800FBF5DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3205AD2F1A95B3F800FBF5DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = AppDelegate.swift; path = "Giúp MacOS/AppDelegate.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3205AD341A95B3F800FBF5DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3205AD361A95B3F800FBF5DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3205AD441A95B3F800FBF5DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3205AD451A95B3F800FBF5DF /* Giu_p_MacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Giu_p_MacOSTests.swift; sourceTree = "<group>"; };
-		3205AD511A95B74300FBF5DF /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = MenuVC.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
-		3205AD561A95BD2E00FBF5DF /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactVC.swift; sourceTree = "<group>"; };
-		3205AD581A95BD6F00FBF5DF /* MoreAppVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreAppVC.swift; sourceTree = "<group>"; };
-		3205AD5A1A95BE2A00FBF5DF /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutVC.swift; sourceTree = "<group>"; };
+		3205AD511A95B74300FBF5DF /* MenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; name = MenuVC.swift; path = "Giúp MacOS/MenuVC.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3205AD561A95BD2E00FBF5DF /* ContactVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContactVC.swift; path = "Giúp MacOS/ContactVC.swift"; sourceTree = "<group>"; };
+		3205AD581A95BD6F00FBF5DF /* MoreAppVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreAppVC.swift; path = "Giúp MacOS/MoreAppVC.swift"; sourceTree = "<group>"; };
+		3205AD5A1A95BE2A00FBF5DF /* AboutVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutVC.swift; path = "Giúp MacOS/AboutVC.swift"; sourceTree = "<group>"; };
 		3205AD5C1A95BE4E00FBF5DF /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
 		3205AD5E1A95BEDC00FBF5DF /* icon_Mac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_Mac.png; sourceTree = "<group>"; };
 		3205AD601A95C0AF00FBF5DF /* moreApps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = moreApps.png; sourceTree = "<group>"; };
 		3205AD621A95C0DF00FBF5DF /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 		3205AD641A95C0E400FBF5DF /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
 		3205AD661A95C0EA00FBF5DF /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
-		3205AD681A974A7900FBF5DF /* DetailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
-		3205AD6A1A974AE900FBF5DF /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
-		3205AD6B1A974AE900FBF5DF /* DetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		3205AD681A974A7900FBF5DF /* DetailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailScreen.swift; path = "Giúp MacOS/DetailScreen.swift"; sourceTree = "<group>"; };
+		3205AD6A1A974AE900FBF5DF /* DetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailVC.swift; path = "Giúp MacOS/DetailVC.swift"; sourceTree = "<group>"; };
+		3205AD6B1A974AE900FBF5DF /* DetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DetailVC.xib; path = "Giúp MacOS/DetailVC.xib"; sourceTree = "<group>"; };
 		320D2F9C1AC5043600EEF2E8 /* Chalkboard.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Chalkboard.ttc; sourceTree = "<group>"; };
 		3227179A1A9A94F3006576B6 /* Control Panel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Control Panel.png"; sourceTree = "<group>"; };
 		3227179C1A9A9A28006576B6 /* Dock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dock.png; sourceTree = "<group>"; };
@@ -121,7 +126,7 @@
 		322717A01A9AA377006576B6 /* Mission control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Mission control.png"; sourceTree = "<group>"; };
 		322717A21A9ABAC7006576B6 /* track.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = track.png; sourceTree = "<group>"; };
 		3235AAD41ACB974800F5CA8F /* trackpad mac error.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "trackpad mac error.jpg"; sourceTree = "<group>"; };
-		3235AAD61ACB9DA700F5CA8F /*  các phím tắt hữa dụng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = " các phím tắt hữa dụng.png"; sourceTree = "<group>"; };
+		3235AAD61ACB9DA700F5CA8F /* các phím tắt hữa dụng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "các phím tắt hữa dụng.png"; sourceTree = "<group>"; };
 		3235AAD81ACBB9DB00F5CA8F /* GiupMacOs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GiupMacOs.png; sourceTree = "<group>"; };
 		3238CE041A998FE60008C726 /* os-x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "os-x.jpg"; sourceTree = "<group>"; };
 		3238CE081A99A17D0008C726 /* Verdana Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Verdana Bold.ttf"; sourceTree = "<group>"; };
@@ -131,20 +136,25 @@
 		324ED0771C5928A600818260 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		324ED0791C5928BD00818260 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		324ED07B1C5928D100818260 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		325BE3D41C9BA08700AAFF83 /* CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		325E5C4B1AC2559F00EB0694 /* he dieu hanh mac os x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "he dieu hanh mac os x.png"; sourceTree = "<group>"; };
-		325E5C4D1AC25AA500EB0694 /* DetailScreen2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailScreen2.swift; sourceTree = "<group>"; };
 		325E5C4F1AC26C8F00EB0694 /* che do bao hanh.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "che do bao hanh.jpg"; sourceTree = "<group>"; };
 		325E5C511AC2A4A400EB0694 /* share data mac win.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "share data mac win.png"; sourceTree = "<group>"; };
 		325E5C531AC2A6B100EB0694 /* tui chong soc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tui chong soc.png"; sourceTree = "<group>"; };
 		325E5C551AC2A87300EB0694 /* bao hanh viet nam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bao hanh viet nam.png"; sourceTree = "<group>"; };
 		325E5C571AC2AB6A00EB0694 /* ko nha dia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ko nha dia.jpg"; sourceTree = "<group>"; };
 		325E5C591AC2AE1600EB0694 /* so lan xac.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "so lan xac.png"; sourceTree = "<group>"; };
-		3273D50E1C426BDD00725A14 /* DetailVC~ipad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DetailVC~ipad.swift"; sourceTree = "<group>"; };
-		3273D50F1C426BDD00725A14 /* DetailVC~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "DetailVC~ipad.xib"; sourceTree = "<group>"; };
-		3276AB901AC841FF00C0F09A /* icon copy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon copy.jpg"; sourceTree = "<group>"; };
+		3273D50E1C426BDD00725A14 /* DetailVC~ipad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "DetailVC~ipad.swift"; path = "Giúp MacOS/DetailVC~ipad.swift"; sourceTree = "<group>"; };
+		3273D50F1C426BDD00725A14 /* DetailVC~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = "DetailVC~ipad.xib"; path = "Giúp MacOS/DetailVC~ipad.xib"; sourceTree = "<group>"; };
 		3276AB921AC842CD00C0F09A /* App1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = App1.png; sourceTree = "<group>"; };
-		3276AB941AC851F700C0F09A /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		3276AB941AC851F700C0F09A /* Detail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Detail.swift; path = "Giúp MacOS/Detail.swift"; sourceTree = "<group>"; };
 		327CB7CC1C5BCEF000AC0CAF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		327CB7D41C5BD73300AC0CAF /* Giúp Mac.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Giúp Mac.xcdatamodel"; sourceTree = "<group>"; };
+		327CB81A1C5C4FB900AC0CAF /* giupmacdata.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = giupmacdata.db; sourceTree = "<group>"; };
+		327CB8221C5C531F00AC0CAF /* CSV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
+		327CB8241C5C5E8800AC0CAF /* giupmac2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = giupmac2.csv; sourceTree = "<group>"; };
+		327CB8261C5C601F00AC0CAF /* GiupMac+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GiupMac+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		327CB8271C5C601F00AC0CAF /* GiupMac.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiupMac.swift; sourceTree = "<group>"; };
 		327F315C1AC2C96300D7F8CF /* vesinhmacbook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vesinhmacbook.png; sourceTree = "<group>"; };
 		327F315E1AC2CDEB00D7F8CF /* resetnpram.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = resetnpram.jpg; sourceTree = "<group>"; };
 		327FD8C31AC6A68100BE675D /* Tăng tốc tối đa máy Mac.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Tăng tốc tối đa máy Mac.jpg"; sourceTree = "<group>"; };
@@ -160,9 +170,8 @@
 		327FD8D71AC6B3C700BE675D /* Khôi phục kết nối Wifi bị gián đoạn .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Khôi phục kết nối Wifi bị gián đoạn .jpg"; sourceTree = "<group>"; };
 		327FD8D91AC6B42B00BE675D /* Xem các tập tin WMV .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Xem các tập tin WMV .jpg"; sourceTree = "<group>"; };
 		327FD8DD1AC6B8E400BE675D /* Các phím tắt hữu ích khi khởi động Mac OS .jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Các phím tắt hữu ích khi khởi động Mac OS .jpg"; sourceTree = "<group>"; };
-		3286ACE41A98887C00D5DFE4 /* MenuData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuData.swift; sourceTree = "<group>"; };
-		3286ACE61A9888D000D5DFE4 /* DetailStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailStr.swift; sourceTree = "<group>"; };
-		328B405B1C59FB1C00463D46 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		3286ACE61A9888D000D5DFE4 /* DetailStr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailStr.swift; path = "Giúp MacOS/DetailStr.swift"; sourceTree = "<group>"; };
+		328B405B1C59FB1C00463D46 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = "Giúp MacOS/Reachability.swift"; sourceTree = "<group>"; };
 		329E6A921A9F902A000D64FE /* Language & Text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Language & Text.png"; sourceTree = "<group>"; };
 		329E6A941A9F9136000D64FE /* Energy Saver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Energy Saver.png"; sourceTree = "<group>"; };
 		329E6A961A9F92D9000D64FE /* Keyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Keyboard.png; sourceTree = "<group>"; };
@@ -179,6 +188,9 @@
 		32AC94461AC86D8B008C5F7E /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		32AC94481AC86D91008C5F7E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		32AC944A1AC86D98008C5F7E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		32C61F791CA27018004E7F1D /* icon_copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_copy.png; sourceTree = "<group>"; };
+		32C61F7B1CA29718004E7F1D /* ShowGoogleAdmob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowGoogleAdmob.swift; sourceTree = "<group>"; };
+		32C61F7D1CA299A3004E7F1D /* aDmob.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = aDmob.swift; sourceTree = "<group>"; };
 		32D7FFE01C42B7F3003A8E2D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		32D7FFE11C42B7F3003A8E2D /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,24 +221,13 @@
 		3205AD211A95B3F800FBF5DF = {
 			isa = PBXGroup;
 			children = (
-				327CB7CC1C5BCEF000AC0CAF /* CoreData.framework */,
-				324ED07B1C5928D100818260 /* MessageUI.framework */,
-				324ED0791C5928BD00818260 /* EventKit.framework */,
-				324ED0771C5928A600818260 /* EventKitUI.framework */,
-				324ED0751C59286700818260 /* AVFoundation.framework */,
-				324ED0731C59285B00818260 /* AudioToolbox.framework */,
-				324ED0711C59277500818260 /* GoogleMobileAds.framework */,
-				32D7FFE01C42B7F3003A8E2D /* Default-568h@2x.png */,
-				32D7FFE11C42B7F3003A8E2D /* Default-568h.png */,
-				32AC944A1AC86D98008C5F7E /* QuartzCore.framework */,
-				32AC94481AC86D91008C5F7E /* AdSupport.framework */,
-				32AC94461AC86D8B008C5F7E /* StoreKit.framework */,
-				32AC94441AC86D81008C5F7E /* CoreGraphics.framework */,
-				32AC94421AC86D78008C5F7E /* SystemConfiguration.framework */,
-				32AC94401AC86D69008C5F7E /* CoreTelephony.framework */,
-				3205AD531A95BCA100FBF5DF /* Image */,
-				3205AD501A95B51300FBF5DF /* Music */,
-				3205AD4F1A95B50D00FBF5DF /* Font */,
+				325BE3D11C9B9ADE00AAFF83 /* Model */,
+				325BE3D21C9B9AF200AAFF83 /* View */,
+				325BE3D31C9B9AF800AAFF83 /* Controller */,
+				325BE3D01C9B9AD400AAFF83 /* Utility */,
+				325BE3CF1C9B9A8D00AAFF83 /* Source */,
+				327CB7D31C5BD73300AC0CAF /* Giúp Mac.xcdatamodeld */,
+				325BE3CE1C9B9A6A00AAFF83 /* Framework */,
 				3205AD2C1A95B3F800FBF5DF /* Giúp MacOS */,
 				3205AD421A95B3F800FBF5DF /* Giúp MacOSTests */,
 				3205AD2B1A95B3F800FBF5DF /* Products */,
@@ -244,25 +245,9 @@
 		3205AD2C1A95B3F800FBF5DF /* Giúp MacOS */ = {
 			isa = PBXGroup;
 			children = (
-				3205AD2F1A95B3F800FBF5DF /* AppDelegate.swift */,
-				3205AD311A95B3F800FBF5DF /* ViewController.swift */,
 				3205AD331A95B3F800FBF5DF /* Main.storyboard */,
 				3205AD361A95B3F800FBF5DF /* Images.xcassets */,
 				3205AD2D1A95B3F800FBF5DF /* Supporting Files */,
-				3205AD511A95B74300FBF5DF /* MenuVC.swift */,
-				3205AD561A95BD2E00FBF5DF /* ContactVC.swift */,
-				3205AD581A95BD6F00FBF5DF /* MoreAppVC.swift */,
-				3205AD5A1A95BE2A00FBF5DF /* AboutVC.swift */,
-				3205AD681A974A7900FBF5DF /* DetailScreen.swift */,
-				325E5C4D1AC25AA500EB0694 /* DetailScreen2.swift */,
-				3276AB941AC851F700C0F09A /* Detail.swift */,
-				3205AD6A1A974AE900FBF5DF /* DetailVC.swift */,
-				3205AD6B1A974AE900FBF5DF /* DetailVC.xib */,
-				3286ACE41A98887C00D5DFE4 /* MenuData.swift */,
-				3286ACE61A9888D000D5DFE4 /* DetailStr.swift */,
-				3273D50E1C426BDD00725A14 /* DetailVC~ipad.swift */,
-				3273D50F1C426BDD00725A14 /* DetailVC~ipad.xib */,
-				328B405B1C59FB1C00463D46 /* Reachability.swift */,
 			);
 			path = "Giúp MacOS";
 			sourceTree = "<group>";
@@ -311,11 +296,13 @@
 		3205AD531A95BCA100FBF5DF /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				32C61F791CA27018004E7F1D /* icon_copy.png */,
+				32D7FFE01C42B7F3003A8E2D /* Default-568h@2x.png */,
+				32D7FFE11C42B7F3003A8E2D /* Default-568h.png */,
 				3235AAD81ACBB9DB00F5CA8F /* GiupMacOs.png */,
-				3235AAD61ACB9DA700F5CA8F /*  các phím tắt hữa dụng.png */,
+				3235AAD61ACB9DA700F5CA8F /* các phím tắt hữa dụng.png */,
 				3235AAD41ACB974800F5CA8F /* trackpad mac error.jpg */,
 				3276AB921AC842CD00C0F09A /* App1.png */,
-				3276AB901AC841FF00C0F09A /* icon copy.jpg */,
 				327FD8DD1AC6B8E400BE675D /* Các phím tắt hữu ích khi khởi động Mac OS .jpg */,
 				327FD8D91AC6B42B00BE675D /* Xem các tập tin WMV .jpg */,
 				327FD8D71AC6B3C700BE675D /* Khôi phục kết nối Wifi bị gián đoạn .jpg */,
@@ -364,6 +351,93 @@
 			name = Image;
 			sourceTree = "<group>";
 		};
+		325BE3CE1C9B9A6A00AAFF83 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				327CB7CC1C5BCEF000AC0CAF /* CoreData.framework */,
+				324ED07B1C5928D100818260 /* MessageUI.framework */,
+				324ED0791C5928BD00818260 /* EventKit.framework */,
+				324ED0771C5928A600818260 /* EventKitUI.framework */,
+				324ED0751C59286700818260 /* AVFoundation.framework */,
+				324ED0731C59285B00818260 /* AudioToolbox.framework */,
+				324ED0711C59277500818260 /* GoogleMobileAds.framework */,
+				32AC944A1AC86D98008C5F7E /* QuartzCore.framework */,
+				32AC94481AC86D91008C5F7E /* AdSupport.framework */,
+				32AC94461AC86D8B008C5F7E /* StoreKit.framework */,
+				32AC94441AC86D81008C5F7E /* CoreGraphics.framework */,
+				32AC94421AC86D78008C5F7E /* SystemConfiguration.framework */,
+				32AC94401AC86D69008C5F7E /* CoreTelephony.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		325BE3CF1C9B9A8D00AAFF83 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				327CB8151C5C4F8900AC0CAF /* SQLITE */,
+				3205AD531A95BCA100FBF5DF /* Image */,
+				3205AD501A95B51300FBF5DF /* Music */,
+				3205AD4F1A95B50D00FBF5DF /* Font */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		325BE3D01C9B9AD400AAFF83 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				327CB8221C5C531F00AC0CAF /* CSV.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		325BE3D11C9B9ADE00AAFF83 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				327CB8261C5C601F00AC0CAF /* GiupMac+CoreDataProperties.swift */,
+				327CB8271C5C601F00AC0CAF /* GiupMac.swift */,
+				325BE3D41C9BA08700AAFF83 /* CoreData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		325BE3D21C9B9AF200AAFF83 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3205AD681A974A7900FBF5DF /* DetailScreen.swift */,
+				3276AB941AC851F700C0F09A /* Detail.swift */,
+				3205AD6A1A974AE900FBF5DF /* DetailVC.swift */,
+				3205AD6B1A974AE900FBF5DF /* DetailVC.xib */,
+				3286ACE61A9888D000D5DFE4 /* DetailStr.swift */,
+				3273D50E1C426BDD00725A14 /* DetailVC~ipad.swift */,
+				3205AD581A95BD6F00FBF5DF /* MoreAppVC.swift */,
+				3205AD561A95BD2E00FBF5DF /* ContactVC.swift */,
+				3205AD5A1A95BE2A00FBF5DF /* AboutVC.swift */,
+				3273D50F1C426BDD00725A14 /* DetailVC~ipad.xib */,
+				328B405B1C59FB1C00463D46 /* Reachability.swift */,
+				32C61F7B1CA29718004E7F1D /* ShowGoogleAdmob.swift */,
+				32C61F7D1CA299A3004E7F1D /* aDmob.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		325BE3D31C9B9AF800AAFF83 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3205AD511A95B74300FBF5DF /* MenuVC.swift */,
+				3205AD2F1A95B3F800FBF5DF /* AppDelegate.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		327CB8151C5C4F8900AC0CAF /* SQLITE */ = {
+			isa = PBXGroup;
+			children = (
+				327CB8241C5C5E8800AC0CAF /* giupmac2.csv */,
+				327CB81A1C5C4FB900AC0CAF /* giupmacdata.db */,
+			);
+			name = SQLITE;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -392,7 +466,7 @@
 			attributes = {
 				LastSwiftMigration = 0710;
 				LastSwiftUpdateCheck = 0710;
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = mhtran;
 				TargetAttributes = {
 					3205AD291A95B3F800FBF5DF = {
@@ -426,9 +500,10 @@
 			files = (
 				32D7FFE21C42B7F3003A8E2D /* Default-568h@2x.png in Resources */,
 				32D7FFE31C42B7F3003A8E2D /* Default-568h.png in Resources */,
+				32C61F7A1CA27018004E7F1D /* icon_copy.png in Resources */,
 				327FD8D41AC6B26600BE675D /* Tìm tập tin thất lạc.jpg in Resources */,
 				325E5C581AC2AB6A00EB0694 /* ko nha dia.jpg in Resources */,
-				3235AAD71ACB9DA700F5CA8F /*  các phím tắt hữa dụng.png in Resources */,
+				3235AAD71ACB9DA700F5CA8F /* các phím tắt hữa dụng.png in Resources */,
 				3205AD351A95B3F800FBF5DF /* Main.storyboard in Resources */,
 				322717A31A9ABAC7006576B6 /* track.png in Resources */,
 				329E6A971A9F92D9000D64FE /* Keyboard.png in Resources */,
@@ -444,6 +519,7 @@
 				327FD8CA1AC6AA8800BE675D /* Gỡ bỏ các biểu tượng System Preferences.png in Resources */,
 				329E6A931A9F902A000D64FE /* Language & Text.png in Resources */,
 				325E5C561AC2A87300EB0694 /* bao hanh viet nam.png in Resources */,
+				327CB81F1C5C4FB900AC0CAF /* giupmacdata.db in Resources */,
 				327FD8D61AC6B2A300BE675D /* Khôi phục mật khẩu quản trị.jpg in Resources */,
 				327FD8C61AC6A7EF00BE675D /* Thiết lập để ứng dụng.jpg in Resources */,
 				329E6AA11A9FED2F000D64FE /* ReInstallMac.png in Resources */,
@@ -465,6 +541,7 @@
 				329E6AA51A9FF704000D64FE /* share.jpg in Resources */,
 				327FD8C41AC6A68100BE675D /* Tăng tốc tối đa máy Mac.jpg in Resources */,
 				3205AD611A95C0AF00FBF5DF /* moreApps.png in Resources */,
+				327CB8251C5C5E8800AC0CAF /* giupmac2.csv in Resources */,
 				3205AD631A95C0DF00FBF5DF /* menu.png in Resources */,
 				327FD8DE1AC6B8E400BE675D /* Các phím tắt hữu ích khi khởi động Mac OS .jpg in Resources */,
 				3227179D1A9A9A28006576B6 /* Dock.png in Resources */,
@@ -473,7 +550,6 @@
 				3205AD371A95B3F800FBF5DF /* Images.xcassets in Resources */,
 				327FD8D21AC6B1E600BE675D /* Dọn trống ổ cứng và tăng bộ nhớ RAM.jpg in Resources */,
 				3205AD5D1A95BE4E00FBF5DF /* background1.png in Resources */,
-				3276AB911AC841FF00C0F09A /* icon copy.jpg in Resources */,
 				325E5C4C1AC2559F00EB0694 /* he dieu hanh mac os x.png in Resources */,
 				3205AD6D1A974AE900FBF5DF /* DetailVC.xib in Resources */,
 				320D2F9D1AC5051700EEF2E8 /* Chalkboard.ttc in Resources */,
@@ -491,20 +567,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327CB8281C5C601F00AC0CAF /* GiupMac+CoreDataProperties.swift in Sources */,
+				327CB8291C5C601F00AC0CAF /* GiupMac.swift in Sources */,
 				328B405C1C59FB1C00463D46 /* Reachability.swift in Sources */,
-				3205AD321A95B3F800FBF5DF /* ViewController.swift in Sources */,
 				3205AD301A95B3F800FBF5DF /* AppDelegate.swift in Sources */,
 				3276AB951AC851F700C0F09A /* Detail.swift in Sources */,
 				3205AD5B1A95BE2A00FBF5DF /* AboutVC.swift in Sources */,
+				327CB7D51C5BD73300AC0CAF /* Giúp Mac.xcdatamodeld in Sources */,
+				325BE3D51C9BA08700AAFF83 /* CoreData.swift in Sources */,
 				3205AD521A95B74300FBF5DF /* MenuVC.swift in Sources */,
+				32C61F7E1CA299A3004E7F1D /* aDmob.swift in Sources */,
 				3205AD591A95BD6F00FBF5DF /* MoreAppVC.swift in Sources */,
 				3205AD6C1A974AE900FBF5DF /* DetailVC.swift in Sources */,
 				3286ACE71A9888D000D5DFE4 /* DetailStr.swift in Sources */,
 				3273D5101C426BDD00725A14 /* DetailVC~ipad.swift in Sources */,
+				32C61F7C1CA29718004E7F1D /* ShowGoogleAdmob.swift in Sources */,
 				3205AD691A974A7900FBF5DF /* DetailScreen.swift in Sources */,
-				3286ACE51A98887C00D5DFE4 /* MenuData.swift in Sources */,
+				327CB8231C5C531F00AC0CAF /* CSV.swift in Sources */,
 				3205AD571A95BD2E00FBF5DF /* ContactVC.swift in Sources */,
-				325E5C4E1AC25AA500EB0694 /* DetailScreen2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,6 +622,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -615,6 +696,7 @@
 				INFOPLIST_FILE = "Giúp MacOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Giúp Mac";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -637,6 +719,7 @@
 				INFOPLIST_FILE = "Giúp MacOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "Giúp Mac";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -667,6 +750,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		327CB7D31C5BD73300AC0CAF /* Giúp Mac.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				327CB7D41C5BD73300AC0CAF /* Giúp Mac.xcdatamodel */,
+			);
+			currentVersion = 327CB7D41C5BD73300AC0CAF /* Giúp Mac.xcdatamodel */;
+			path = "Giúp Mac.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3205AD221A95B3F800FBF5DF /* Project object */;
 }

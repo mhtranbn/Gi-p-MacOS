@@ -37,11 +37,8 @@ class Detail: UIViewController,UIScrollViewDelegate {
             imageCenter?.image = UIImage(named: data!.imagePath)
             self.view.addSubview(imageCenter!)
         }
-//        imageCenter = UIImageView(frame:CGRect(x: 0, y: 0, width: 2 * centerPoint.x - 120, height: 2 * centerPoint.x - 120))
-//        imageCenter?.center = CGPoint(x: centerPoint.x , y: imageCenter!.bounds.height / 2 + 10)
-//        imageCenter?.image = UIImage(named: data!.imagePath)
-//        self.view.addSubview(imageCenter!)
-        textView = UITextView(frame: CGRect(x: 30, y: centerPoint.y - 20, width: centerPoint.x * 2 - 60, height: centerPoint.y - 110))
+
+        textView = UITextView(frame: CGRect(x: 30, y: centerPoint.y - 20, width: centerPoint.x * 2 - 60, height: centerPoint.y - 150))
         textView.text = data!.detail
         textView.editable = false
         textView.selectable = true
@@ -54,7 +51,7 @@ class Detail: UIViewController,UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let back : UIBarButtonItem = UIBarButtonItem(title: "<- Quay lại", style: UIBarButtonItemStyle.Plain, target: self, action: "backview")
+        let back : UIBarButtonItem = UIBarButtonItem(title: "<- Quay lại", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(Detail.backview))
         if let font = UIFont(name: "Chalkboard", size: 16) {
             back.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
         }
@@ -63,7 +60,7 @@ class Detail: UIViewController,UIScrollViewDelegate {
     }
     func backview() {
         if let navController = self.navigationController {
-            navController.popViewControllerAnimated(true)
+            navController.popViewControllerAnimated(false)
         }
     }
 

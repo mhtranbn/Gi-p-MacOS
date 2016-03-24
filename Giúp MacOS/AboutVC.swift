@@ -21,9 +21,9 @@ class AboutVC: UIViewController,UIScrollViewDelegate {
         let screenWidth = screenSize.width
         let screenHeight = screenSize.height
         if (autoscroolTimer == nil) {
-            autoscroolTimer = NSTimer.scheduledTimerWithTimeInterval(50.0/1000.0, target: self, selector: "autoscrollTimeFired", userInfo: nil, repeats: true)
+            autoscroolTimer = NSTimer.scheduledTimerWithTimeInterval(50.0/1000.0, target: self, selector: #selector(AboutVC.autoscrollTimeFired), userInfo: nil, repeats: true)
         }
-        autoscroolTimer = NSTimer.scheduledTimerWithTimeInterval(50.0/1000.0, target: self, selector: "autoscrollTimeFired", userInfo: nil, repeats: true)
+        autoscroolTimer = NSTimer.scheduledTimerWithTimeInterval(50.0/1000.0, target: self, selector: #selector(AboutVC.autoscrollTimeFired), userInfo: nil, repeats: true)
 
 
         textView = UITextView(frame : CGRect(x:10, y:60, width:(screenWidth-20), height: (screenHeight+220) ))

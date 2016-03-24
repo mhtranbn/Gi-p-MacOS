@@ -1,3 +1,4 @@
+
 //
 //  AppDelegate.swift
 //  Giúp MacOS
@@ -7,28 +8,13 @@
 //
 
 import UIKit
-
+import CoreData
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-//        var sdk: STAStartAppSDK = STAStartAppSDK.sharedInstance();
-//        sdk.appID = "202826816"
-//        sdk.devID = "102348334"
-//        sdk.preferences = STASDKPreferences.prefrencesWithAge(22, andGender: STAGender_Male)
-//        var splashPreferences : STASplashPreferences = STASplashPreferences()
-//        splashPreferences.splashMode = STASplashModeTemplate
-//        splashPreferences.splashTemplateTheme = STASplashTemplateThemeOcean;
-//        splashPreferences.splashLoadingIndicatorType = STASplashLoadingIndicatorTypeDots;
-//        splashPreferences.splashTemplateIconImageName = "Giúp Mac OSIconStart";
-//        splashPreferences.splashTemplateAppName = "Giúp Mac OS";
-//        
-//        sdk.showSplashAdWithPreferences(splashPreferences)
-
         
         let tabBarBackGround : UIImage = UIImage(named: "background1.png")!
         UITabBar.appearance().backgroundImage = tabBarBackGround
@@ -61,11 +47,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             vc4.tabBarItem.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
         }
                 self.window?.makeKeyAndVisible()
-        
+        checkDataStore()
         return true
         
     }
-
+    
+    
     func prefersStatusBarHidden() -> Bool {
         return true
     }
@@ -92,7 +79,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    func checkDataStore() {
+        let coreData = CoreData()
+        
+        let request = NSFetchRequest(entityName: "GiupMac")
+        
+        let error: NSErrorPointer = nil
+        
+        let giupMacCount = coreData.managedObjectContext.countForFetchRequest(request, error: error)
+        
+        print("Total help is \(giupMacCount)")
+        
+        if giupMacCount == 0 {
+            uploadData()
+        }
+        
+    }
+    
+    func uploadData() {
+        let coreData = CoreData()
+        
+        let url = NSBundle.mainBundle().pathForResource("giupmac2", ofType: "csv")!
+        
+        let error: NSErrorPointer = nil
+        
+        let csvTitle = CSV(contentsOfFile: url, error: error)
+        
+        
+        do {
+            for i in 0...(csvTitle!.columns["title"]!.count - 1) {
+                let giupmac = NSEntityDescription.insertNewObjectForEntityForName("GiupMac", inManagedObjectContext:coreData.managedObjectContext) as! GiupMac
+                
+                giupmac.title = csvTitle!.columns["title"]![i]
+                giupmac.detail = csvTitle!.columns["detail"]![i]
+                giupmac.image = csvTitle!.columns["image"]![i]
+                giupmac.kindof = csvTitle!.columns["catogery"]![i]
+            }
+            
+            coreData.saveContext()
+            
+            let request = NSFetchRequest(entityName: "GiupMac")
+            let giupMacCount = coreData.managedObjectContext.countForFetchRequest(request, error: error)
+            print("Total help B is \(giupMacCount)")
+            
+        }
+    }
+    
+    
 
 }
 

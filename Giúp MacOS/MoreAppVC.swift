@@ -29,11 +29,10 @@ class MoreAppVC: UIViewController {
         let centerP = CGPoint(x: self.view.bounds.size.width / 2, y: self.view.bounds.size.height / 2)
 // game snake trong view
         
-        let title = UILabel(frame: CGRect(x: centerP.x/3, y: 30, width: 190, height: 20))
         let game1 = UIButton(frame: CGRectMake(centerP.x - 30, centerP.y - 90, 60, 60))
         let image1 = UIImage(named: "App1.png") as UIImage!
         game1.setBackgroundImage(image1, forState: .Normal)
-        game1.addTarget(self, action: "storeSnake", forControlEvents: UIControlEvents.TouchUpInside)
+        game1.addTarget(self, action: #selector(MoreAppVC.storeSnake), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(game1)
         let label1 = UILabel(frame: CGRect(x: centerP.x - 33, y: centerP.y - 20, width: 190, height: 20))
         label1.text = (NSString(UTF8String: "Snake 2025") as! String)
@@ -43,9 +42,9 @@ class MoreAppVC: UIViewController {
 // game imposiblee hyrry trong view
         
         let game2 = UIButton(frame: CGRectMake(centerP.x - 30, centerP.y + 30 , 60, 60))
-        let image2 = UIImage(named: "icon copy.jpg") as UIImage!
+        let image2 = UIImage(named: "icon_copy.png") as UIImage!
         game2.setBackgroundImage(image2, forState: UIControlState.Normal)
-        game2.addTarget(self, action: "touchImpossible", forControlEvents: UIControlEvents.TouchUpInside)
+        game2.addTarget(self, action: #selector(MoreAppVC.touchImpossible), forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(game2)
         let label2 = UILabel(frame: CGRect(x: centerP.x - 50, y: centerP.y + 100, width: 120, height: 20))
         label2.text = (NSString(UTF8String: "Impossible Hurry") as! String)

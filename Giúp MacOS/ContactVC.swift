@@ -42,7 +42,7 @@ class ContactVC: UIViewController,UITextFieldDelegate,MFMailComposeViewControlle
         self.view.addSubview(chuyenmuc!)
         chuyenmuc?.userInteractionEnabled = true
         chuyenmuc?.multipleTouchEnabled = true
-        let voTinhte = UITapGestureRecognizer(target: self, action: "voTinhte:")
+        let voTinhte = UITapGestureRecognizer(target: self, action: #selector(ContactVC.voTinhte(_:)))
         chuyenmuc?.addGestureRecognizer(voTinhte)
         email = UILabel(frame: CGRect(x: 20, y: centerPoint.y - 100, width: 300, height: 20))
         email?.text = "tranmanhhoang@gmail.com"
@@ -54,11 +54,11 @@ class ContactVC: UIViewController,UITextFieldDelegate,MFMailComposeViewControlle
         email?.multipleTouchEnabled = true
         email?.userInteractionEnabled = true
         var guimail: UITapGestureRecognizer?
-        guimail = UITapGestureRecognizer(target: self, action: "guiMail:")
+        guimail = UITapGestureRecognizer(target: self, action: #selector(ContactVC.guiMail(_:)))
         email?.addGestureRecognizer(guimail!)
         sdt?.multipleTouchEnabled = true
         sdt?.userInteractionEnabled = true
-        let callHoang = UITapGestureRecognizer(target: self, action: "calHoang:")
+        let callHoang = UITapGestureRecognizer(target: self, action: #selector(ContactVC.calHoang(_:)))
         sdt?.addGestureRecognizer(callHoang)
         
         facebook = UILabel(frame: CGRect(x: 20, y: centerPoint.y + 50, width: 200, height: 20))
@@ -68,7 +68,7 @@ class ContactVC: UIViewController,UITextFieldDelegate,MFMailComposeViewControlle
         facebook?.textAlignment = NSTextAlignment.Left
         facebook?.userInteractionEnabled = true
         facebook?.multipleTouchEnabled = true
-        let shareF = UITapGestureRecognizer(target: self, action: "showFaceBook:")
+        let shareF = UITapGestureRecognizer(target: self, action: #selector(ContactVC.showFaceBook(_:)))
         facebook?.addGestureRecognizer(shareF)
         
         
@@ -79,7 +79,7 @@ class ContactVC: UIViewController,UITextFieldDelegate,MFMailComposeViewControlle
         twiter?.textAlignment = NSTextAlignment.Left
         twiter?.userInteractionEnabled = true
         twiter?.multipleTouchEnabled = true
-        let sharet = UITapGestureRecognizer(target: self, action: "showTweetSheet:")
+        let sharet = UITapGestureRecognizer(target: self, action: #selector(ContactVC.showTweetSheet(_:)))
         twiter?.addGestureRecognizer(sharet)
         self.view.addSubview(twiter!)
 

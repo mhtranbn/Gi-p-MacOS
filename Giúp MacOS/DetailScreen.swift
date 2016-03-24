@@ -9,6 +9,7 @@
 import UIKit
 import GoogleMobileAds
 import SystemConfiguration
+import CoreData
 
 class View: UIViewController {
     override func viewDidLoad() {
@@ -19,12 +20,28 @@ class View: UIViewController {
 class DetailScreen: UITableViewController {
 
     var cellID = "#"
-    var t: Int = 0
-    var tg: Int = 0
-    var data: MenuData?
+    private var _category : String = "hdhmac"
+    var category : String {
+        get {
+            return _category
+        }
+    }
+    init (category: String) {
+        self._category = category
+        super.init(nibName: nil, bundle:nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    var giupMac : [GiupMac] = []
+    var managedObjectContext : NSManagedObjectContext!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let back : UIBarButtonItem = UIBarButtonItem(title: "<- Quay lại", style: UIBarButtonItemStyle.Plain, target: self, action: "backview")
+        let back : UIBarButtonItem = UIBarButtonItem(title: "<- Quay lại", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(DetailScreen.backview))
         if let font = UIFont(name: "Chalkboard", size: 16) {
             back.setTitleTextAttributes([NSFontAttributeName: font], forState: UIControlState.Normal)
         }
@@ -41,18 +58,41 @@ class DetailScreen: UITableViewController {
         }
 
         self.clearsSelectionOnViewWillAppear = false
+        
+        let coreData = CoreData()
+        managedObjectContext = coreData.managedObjectContext
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        loadData()
+    }
+    
+    func loadData() {
+        
+        let request = NSFetchRequest(entityName:"GiupMac")
+        request.predicate = NSPredicate(format: "kindof = %@" , category)
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+
+            
+        do {
+            giupMac = try managedObjectContext.executeFetchRequest(request) as! [GiupMac]
+            
+            tableView.reloadData()
+        }
+        catch {
+            fatalError("Error in retrieving giupMac help")
+        }
     }
 
     func backview() {
-        navigationController?.popToRootViewControllerAnimated(true)
+        navigationController?.popToRootViewControllerAnimated(false)
     }
     
-    func setData(data:MenuData) {
-        self.data = data
-    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data!.detailData.count
+        return giupMac.count
     }
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell: DetailVC!
@@ -61,9 +101,10 @@ class DetailScreen: UITableViewController {
         }
 
         // Configure the cell...
-        let detailStr = data!.detailData[indexPath.row] as DetailStr
+        let detailStr = giupMac[indexPath.row]
+        
         cell.title.text = detailStr.title
-        cell.imageDe.image = UIImage(named: detailStr.imagePath)
+        cell.imageDe.image = UIImage(named: detailStr.image!)
 
         return cell
     }
@@ -75,7 +116,10 @@ class DetailScreen: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        self.navigationController?.pushViewController(Detail(data:data!.detailData[indexPath.row]), animated: true)
+        let detailStr = giupMac[indexPath.row]
+        
+        let detailVCMain = Detail(data: DetailStr(title: detailStr.detail!, imagePath: detailStr.image!, detail: detailStr.detail!))
+        self.navigationController?.pushViewController(detailVCMain, animated: false)
         
     }
     
@@ -97,7 +141,15 @@ class DetailScreen: UITableViewController {
         }
         
         else {
+            let bannerView = GADBannerView(frame: CGRect(x: 0, y: self.view.frame.height - 55 - (self.navigationController?.navigationBar.frame.size.height)!, width: self.view.frame.width, height: 50))
+            bannerView.adUnitID = "ca-app-pub-6539656833486891/1142539760"
+            bannerView.rootViewController = self
+            let request = GADRequest()
+            request.testDevices = ["58643351-9AF2-4C00-A7D8-CCFEF7B663E5"]
+            bannerView.loadRequest(request)
+            self.view.addSubview(bannerView)
           return 50
+            
         }
     }
 
